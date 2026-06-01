@@ -37,10 +37,41 @@ bool NhanVien::isValidEmail()
 {
     if(Email.empty())
         return false;
+
+    int cntAt = 0;
+    int posAt = -1;
+
     for(int i = 0; i < Email.length(); i++)
-        if(!isdigit(Email[i]) && !isalpha(Email[i]) && Email[i] != '@' && Email[i] != '.')
+    {
+        char c = Email[i];
+
+        if(!isalnum(c) && c != '@' && c != '.')
             return false;
-    return true;
+
+        if(c == '@')
+        {
+            cntAt++;
+            posAt = i;
+        }
+    }
+
+    if(cntAt != 1)
+        return false;
+
+    if(posAt == 0 || posAt == Email.length() - 1) //Ký tự @ không được nằm ở đầu hoặc cuối email
+        return false;
+
+    bool hasDot = false; //Kiểm tra có kí tự '.' không
+    for(int i = posAt + 1; i < Email.length(); i++)
+    {
+        if(Email[i] == '.')
+        {
+            hasDot = true;
+            break;
+        }
+    }
+
+    return hasDot;
 }
 
 /*Đầu vào: Không có
@@ -48,7 +79,7 @@ bool NhanVien::isValidEmail()
 Chức năng: Kiểm tra số điện thoại bắt đầu bằng số 0 và chỉ chứa chữ số*/
 bool NhanVien::isValidNum()
 {
-    if(SDT.empty() || SDT[0] != '0')
+    if(SDT.empty() || SDT[0] != '0' || SDT.length() != 10)
         return false;
     for(int i = 0; i < SDT.length(); i++)
         if(!isdigit(SDT[i]))

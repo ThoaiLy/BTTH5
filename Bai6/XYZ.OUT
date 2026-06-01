@@ -1,11 +1,32 @@
-1 1 1
-Tên: A
-Số tiền phải trả: 110
+3 4 3
+Tên: A1
+Số tiền phải trả: 1100
 
-Tên: B
-Số tiền phải trả: 60
+Tên: A2
+Số tiền phải trả: 4400
 
-Tên: C
-Số tiền phải trả: 60
+Tên: A3
+Số tiền phải trả: 9900
 
-Tổng tiền công ty thu được: 230
+Tên: B1
+Số tiền phải trả: 1350
+
+Tên: B2
+Số tiền phải trả: 3750
+
+Tên: B3
+Số tiền phải trả: 7350
+
+Tên: B4
+Số tiền phải trả: 7087.5
+
+Tên: C1
+Số tiền phải trả: 864
+
+Tên: C2
+Số tiền phải trả: 3456
+
+Tên: C3
+Số tiền phải trả: 7776
+
+Tổng tiền công ty thu được: 47033.5

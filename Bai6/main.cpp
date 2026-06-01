@@ -18,7 +18,6 @@ int main()
         return 0;
     }
 
-    out << fixed << setprecision(0);
     KhachHang *ds[10000];
     int x, y, z, n = 0;
     in >> x >> y >> z;
