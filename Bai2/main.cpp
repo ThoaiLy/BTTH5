@@ -17,7 +17,18 @@ int main()
 
     //Nhập danh sách giao dịch
     int n;
-    cout << "Nhập số lượng giao dịch: "; cin >> n;
+    while(true)
+    {
+        cout << "Nhập số lượng giao dịch: "; cin >> n;
+        if(cin.fail() || cin.peek() != '\n' || n < 0)
+        {
+            cout << "Dữ liệu nhận sai!\n";
+            cin.clear();
+            cin.ignore(10000, '\n');
+            continue;
+        }
+        break;
+    }
     for(int i = 0; i < n; i++)
     {
         int loaiGD;

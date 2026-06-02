@@ -15,7 +15,19 @@ int main()
 
     //Câu a
     int n;
-    cout << "Nhập số lượng nhân viên:"; cin >> n; cin.ignore();
+    while(true)
+    {
+        cout << "Nhập số lượng nhân viên: "; cin >> n;
+        if(cin.fail() || cin.peek() != '\n' || n < 0)
+        {
+            cout << "Dữ liệu nhận sai!\n";
+            cin.clear();
+            cin.ignore(10000, '\n');
+            continue;
+        }
+        break;
+    }
+    cin.ignore();
 
     for(int i = 0; i < n; i++)
     {

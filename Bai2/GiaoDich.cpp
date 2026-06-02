@@ -152,6 +152,11 @@ void GiaoDich::Xuat()
     cout << "Diện tích: " << DienTich << '\n';
 }
 
+/*Đầu vào: Không có
+Đầu ra:vKhông có
+Chức năng: Destructor ảo của lớp GiaoDich.*/
+GiaoDich::~GiaoDich(){}
+
 /* Đầu vào: Không có
    Đầu ra: Ngày giao dịch
    Chức năng: Trả về ngày giao dịch */

@@ -154,6 +154,11 @@ void SinhVien::Xuat()
     cout << "Điểm trung bình: " << DTB << '\n';
 }
 
+/*Đầu vào: Không có
+Đầu ra:vKhông có
+Chức năng: Destructor ảo của lớp SinhVien.*/
+SinhVien::~SinhVien(){}
+
 /* Đầu vào: Không có
    Đầu ra: Điểm trung bình của sinh viên
    Chức năng: Trả về giá trị điểm trung bình */

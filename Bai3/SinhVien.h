@@ -18,6 +18,6 @@ class SinhVien{
         virtual void Xuat();
         virtual bool DuDKTotNghiep() = 0;
         virtual int getType() = 0;
-        virtual ~SinhVien() {}
+        virtual ~SinhVien();
         double getDTB();
 };

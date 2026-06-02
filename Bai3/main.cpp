@@ -12,8 +12,18 @@ int main()
     SinhVien *ds[10000];
 
     int n;
-    cout << "Nhập số lượng sinh viên: ";
-    cin >> n;
+    while(true)
+    {
+        cout << "Nhập số lượng sinh viên: "; cin >> n;
+        if(cin.fail() || cin.peek() != '\n' || n < 0)
+        {
+            cout << "Dữ liệu nhận sai!\n";
+            cin.clear();
+            cin.ignore(10000, '\n');
+            continue;
+        }
+        break;
+    }
 
     for(int i = 0; i < n; i++)
     {

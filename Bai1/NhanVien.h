@@ -15,7 +15,7 @@ class NhanVien{
         virtual void Xuat();
         virtual double TinhLuong() = 0;
         virtual int getType() = 0;
-        virtual ~NhanVien() {}
+        virtual ~NhanVien();
         int getNgay();
         int getThang();
         int getNam();

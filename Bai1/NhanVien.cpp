@@ -121,6 +121,10 @@ void NhanVien::Xuat()
     cout << "Tên: " << name << '\n';
     cout << "Ngày sinh: " << Ngay << '/' << Thang << '/' << Nam << '\n';
 }
+/*Đầu vào: Không có
+Đầu ra:vKhông có
+Chức năng: Destructor ảo của lớp NhanVien.*/
+NhanVien::~NhanVien(){}
 
 /*Đầu vào: Không có
 Đầu ra: Ngày sinh

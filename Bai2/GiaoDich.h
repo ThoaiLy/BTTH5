@@ -16,7 +16,7 @@ class GiaoDich{
         virtual void Xuat();
         virtual int LayLoaiGD() = 0; //1 là Đất. 2 là Nhà phố. 3 là Căn hộ chung cư
         virtual double ThanhTien() = 0;
-        virtual ~GiaoDich() {}
+        virtual ~GiaoDich();
         int getNgay();
         int getThang();
         int getNam();

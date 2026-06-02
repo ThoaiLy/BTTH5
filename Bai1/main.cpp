@@ -15,7 +15,18 @@ int main()
     NhanVien *ds[10000];
     //Nhập danh sách
     int n;
-    cout << "Nhập số lượng nhân viên: "; cin >> n;
+    while(true)
+    {
+        cout << "Nhập số lượng nhân viên: "; cin >> n;
+        if(cin.fail() || cin.peek() != '\n' || n < 0)
+        {
+            cout << "Dữ liệu nhận sai!\n";
+            cin.clear();
+            cin.ignore(10000, '\n');
+            continue;
+        }
+        break;
+    }
     for(int i = 0; i < n; i++)
     {
         int loai;
@@ -39,6 +50,11 @@ int main()
 
     //Xuất danh sách
     cout << "\n======Danh sách nhân viên======\n";
+    if(n == 0)
+    {
+        cout << "Danh sách rỗng!\n";
+        return 0;
+    }
     for(int i = 0; i < n; i++){
         ds[i] -> Xuat();
         cout << "----------------------\n";

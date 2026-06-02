@@ -210,3 +210,9 @@ void NhanVien::Xuat()
     cout << "Số điện thoại: " << SDT << '\n';
     cout << "Lương cơ bản: " << LuongCB << '\n';
 }
+
+
+/*Đầu vào: Không có
+Đầu ra:vKhông có
+Chức năng: Destructor ảo của lớp NhanVien.*/
+NhanVien::~NhanVien(){}
