@@ -15,7 +15,6 @@ NVVP::NVVP() : NhanVien()
 /*Đầu vào:
     ten: họ tên
     d, m, y: ngày sinh
-    l: lương
     songaylam: số ngày làm việc
 Đầu ra: Không có
 Chức năng: Khởi tạo nhân viên văn phòng.*/

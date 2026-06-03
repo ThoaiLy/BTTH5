@@ -17,7 +17,6 @@ NhanVien::NhanVien()
 /*Đầu vào:
     ten: họ tên nhân viên
     d, m, y: ngày sinh
-    l: lương
 Đầu ra: Không có
 Chức năng: Khởi tạo nhân viên với thông tin được truyền vào.*/
 NhanVien::NhanVien(string ten, int d, int m, int y)
@@ -122,7 +121,7 @@ void NhanVien::Xuat()
     cout << "Ngày sinh: " << Ngay << '/' << Thang << '/' << Nam << '\n';
 }
 /*Đầu vào: Không có
-Đầu ra:vKhông có
+Đầu ra: Không có
 Chức năng: Destructor ảo của lớp NhanVien.*/
 NhanVien::~NhanVien(){}
 

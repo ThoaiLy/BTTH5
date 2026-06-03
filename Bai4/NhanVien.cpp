@@ -213,6 +213,6 @@ void NhanVien::Xuat()
 
 
 /*Đầu vào: Không có
-Đầu ra:vKhông có
+Đầu ra: Không có
 Chức năng: Destructor ảo của lớp NhanVien.*/
 NhanVien::~NhanVien(){}

@@ -16,7 +16,6 @@ NVSX::NVSX() : NhanVien()
 /*Đầu vào:
     ten: họ tên
     d, m, y: ngày sinh
-    l: lương
     lcb: lương cơ bản
     ssp: số sản phẩm
 Đầu ra: Không có
